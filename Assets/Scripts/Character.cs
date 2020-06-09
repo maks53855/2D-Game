@@ -80,7 +80,7 @@ public class Character : Unit
 
     private void Shoot()
     {
-        Vector3 position = transform.position; position.y += 0.8F;
+        Vector3 position = transform.position; position.y += 0F; position.x += -2.2F;
         Bullet newBullet = Instantiate(bullet, position, bullet.transform.rotation) as Bullet;
 
         newBullet.Parent = gameObject;
